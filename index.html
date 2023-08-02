@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional</title>
+    <style>
+        .card {
+            border: 1px solid gainsboro;
+            height: 260px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5%;
+        }
+        img {
+            width: 100%;
+        }
+        h4 {
+            border-top: 1px solid gainsboro;
+            width: 100%;
+            margin: 0;
+            padding-top: 5px;
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+        }
+        .card::before {
+            content: "X";
+            position: relative;
+            top: 5px;
+            left: 5px;
+            color: gray;
+        }
+        .card::after {
+            content: "9";
+            position: absolute;
+            top: 0px;
+            left: 195px;
+            background-color: red;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img 
+        src="https://www.svgrepo.com/show/429787/human-man-10.svg" 
+        alt="profile">
+        <h4>A.Rudiger</h4>
+    </div>
+</body>
+</html>
